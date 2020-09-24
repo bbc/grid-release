@@ -2,24 +2,24 @@
 class Gridcli < Formula
   desc "This application simplifies the deployment of Grid."
   homepage "https://github.com/bbc/homebrew-gridcli"
-  version "0.1.1"
+  version "0.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bbc/gridcli/releases/download/v0.1.1/gridcli_0.1.1_darwin_amd64.tar.gz"
-    sha256 "8ac089fc44ab426664cf4e892656b96ed8eeab91c560273eaa4a8ce75f295ee3"
+    url "https://github.com/bbc/gridcli/releases/download/v0.1.2/gridcli_0.1.2_darwin_amd64.tar.gz"
+    sha256 "daf503d862e60b22d7d99594906b2530a83db2e651726e321ee711bfb6f8eb16"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/bbc/gridcli/releases/download/v0.1.1/gridcli_0.1.1_linux_amd64.tar.gz"
-      sha256 "82509014290878d53f8ff66d263010175d3a04a33c17ca3622053c898000e89a"
+      url "https://github.com/bbc/gridcli/releases/download/v0.1.2/gridcli_0.1.2_linux_amd64.tar.gz"
+      sha256 "5f33b555fc1828ea2067c12a721aad6a49509a703be14395b03e6def92631926"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bbc/gridcli/releases/download/v0.1.1/gridcli_0.1.1_linux_arm64.tar.gz"
-        sha256 "4e7869a1ef95f85913be340c4d330a52e381e1acc93bf1ad907245c32a3230f8"
+        url "https://github.com/bbc/gridcli/releases/download/v0.1.2/gridcli_0.1.2_linux_arm64.tar.gz"
+        sha256 "ad819b77ae6c45e5a4b9bafa6b576f4f51ab7b555f04e0e357cc2dc61f6ae933"
       else
-        url "https://github.com/bbc/gridcli/releases/download/v0.1.1/gridcli_0.1.1_linux_arm.tar.gz"
-        sha256 "4e6600bdf068632469680c0e6d4ea4904b075ae3072849b2f4d27fd7be5e8689"
+        url "https://github.com/bbc/gridcli/releases/download/v0.1.2/gridcli_0.1.2_linux_arm.tar.gz"
+        sha256 "35dabbe5a08159a9e1d71745297b3a39fb067adb8387e77f617e1c87c75f798e"
       end
     end
   end
